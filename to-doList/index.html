@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List App</title>
+    <link rel=" stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="todo-app">
+        <h2>TO-Do List <img src="images/icon.jpg"> </h2>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your text">
+            <input type="date" id="deadline" placeholder="Deadline">
+            <select id="priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <input type="text" id="label" placeholder="Label">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+           <!-- Items will be added here
+            <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>-->
+        </ul>
+        <div id="progress">
+                <!-- Progress of tasks will be displayed here -->
+            </div>
+    </div>
+   </div> 
+   <script src="script.js"></script>
+</body>
+</html>
